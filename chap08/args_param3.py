@@ -1,0 +1,2 @@
+def concatenate(*args):
+    pass
