@@ -2,7 +2,7 @@ import asyncio
 import time
 
 
-async def heavy_process(name, sec):
+async def heavey_process(name, sec):
     print(f'start {name}')
     await asyncio.sleep(sec)
     print(f'end {name}')
@@ -11,7 +11,13 @@ async def heavy_process(name, sec):
 start = time.time()
 loop = asyncio.get_event_loop()
 result = loop.run_until_complete(
-    heavy_process('Hoge', 5)
+    asyncio.gather(
+        heavey_process('hoge', 2),
+        heavey_process('bar', 5),
+        heavey_process('piyo', 1),
+        heavey_process('spam', 3)
+    )
 )
 end = time.time()
+print(result)
 print(f'Process Time: {end - start}')
