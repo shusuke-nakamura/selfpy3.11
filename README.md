@@ -7,3 +7,7 @@ python -m venv selfpy
 # requests のインストール
 
 pip install requests
+
+# sphinx のインストール
+
+pip install sphinx
