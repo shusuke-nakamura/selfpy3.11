@@ -11,3 +11,8 @@ pip install requests
 # sphinx のインストール
 
 pip install sphinx
+
+# 仮想環境のアップグレード
+
+python -m venv selfpy --upgrade
+(python -m venv (仮想環境へのパス) --upgrade)
