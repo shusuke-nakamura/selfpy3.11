@@ -5,6 +5,12 @@
 		}
 	],
 	"settings": {
-		"editor.formatOnSave": true
+		"[python]": {
+			"diffEditor.ignoreTrimWhitespace": false,
+			"editor.formatOnType": true,
+			"editor.wordBasedSuggestions": false,
+			"editor.formatOnSave": true
+		},
+		"python.terminal.activateEnvInCurrentTerminal": true
 	}
 }
